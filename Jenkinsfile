@@ -1,6 +1,6 @@
 node {
     stage('clone') {
-        git 'https://github.com/SanaouMoh/jenkins-helloworld.git'
+        chechout scm
      }
     stage('build') {
         sh 'javac Main.java'
